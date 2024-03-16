@@ -2,82 +2,15 @@
 <html>
 <head>
     <script src="./js/player-control.js"></script>
-    <style>
-        .iconvideo {
-            background: url('/players/1/images/iconvideo.png') no-repeat;
-            background-size: contain;
-            width: 25px;
-            height: 25px;
-            display: block;
-            float: right;
-            margin-top: -6px;
-            cursor: pointer;
-        }
-
-        .iconCompleted {
-            background: url('images/circle_incomplete.png') no-repeat;
-            background-size: contain;
-            width: 25px;
-            height: 25px;
-            display: block;
-            float: right;
-            margin-top: -6px;
-            cursor: pointer;
-        }
-
-        #sidebar {
-            width: 200px;
-            margin-left: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            color: #333;
-            padding: 10px;
-            overflow: auto;
-            background-color: #000; /* Initial black background */
-            background-image: url('images/load.gif'); /* Set the loading gif */
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 150px; /* Set the gif size to 50px */
-        }
-        #videoList {
-            list-style-type: none;
-            padding: 0;
-        }
-        #videoList > li {
-            padding: 10px;
-            border-bottom: 1px solid #eee;
-        }
-        #videoList > li:hover {
-            background-color: #ddd;
-        }
-        #playerContainer {
-            display: flex;
-            justify-content: flex-end;
-            padding: 10px;
-        }
-        #vimeo_video {
-            width: 640px;
-            min-height: 360px;
-            background-color: #000; /* Initial black background */
-            background-image: url('images/load.gif'); /* Set the loading gif */
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 150px; /* Set the gif size to 50px */
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style-control.css">
 </head>
 <body>
+<script src="https://player.vimeo.com/api/player.js"></script>
 <div id="playerContainer">
     <div id="vimeo_video"></div>
     <div id="sidebar">
         <ul id="videoList"></ul>
     </div>
 </div>
-
-<script src="https://player.vimeo.com/api/player.js"></script>
-
-<script>
-
-</script>
 </body>
 </html>
